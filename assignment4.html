@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-time COVID-19 Data</title>
+
+  <!-- Import Link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <!-- <h1>Real-time COVID-19 Data</h1>
+
+    <div id="covidData"></div> -->
+
+    <div class="card m-5 p-5 bg-light shadow">
+        <div class="card-body">
+              <h1 class="card-title text-center mb-3">COVID-19 Tracker</h1>
+            <div class="mb-4">
+                <div>
+                    <div class="d-flex justify-content-center align-items-center mx-auto">
+                        <input class="form-control-lg w-60 m-4" id="inputCountry" type="text" placeholder="Enter country name...">
+                        <button class="btn btn-dark px-4 btn-lg text-white fw-bold" onclick="getData()" onkeypress="getData()">
+                            Get Data
+                        </button>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mx-auto">
+                    <div class="card shadow text-bg- my-3 mx-4" style="width: 20rem; height: 9rem;">
+                        <div class="card-header fw-bold text-dark">Active Cases</div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                          <h4 id="activeCases" class="card-text text-center text-break text-dark">total active case</h4>
+                        </div>
+                    </div>
+                    <div class="card shadow text-bg-white my-3 mx-4" style="width: 20rem; height: 9rem;">
+                        <div class="card-header fw-bold text-dark">New Cases</div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                          <h4 id="newCases" class="card-text text-center text-dark">total new case</h4>
+                        </div>
+                    </div>
+                    <div class="card shadow text-bg-white my-3 mx-4" style="width: 20rem; height: 9rem;">
+                        <div class="card-header fw-bold text-dark">Recovered Cases</div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                          <h4 id="recoveredCases" class="card-text text-center text-dark">total recovered case</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mx-auto">
+                    <div class="card shadow text-bg-white my-3 mx-4" style="width: 20rem; height: 9rem;">
+                        <div class="card-header fw-bold text-dark">Total Deaths</div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                          <h4 id="totalDeaths" class="card-text text-center text-dark">total death case</h4>
+                        </div>
+                    </div>
+                    <div class="card shadow text-bg-white my-3 mx-4" style="width: 20rem; height: 9rem;">
+                        <div class="card-header fw-bold text-dark">Total Tests</div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                          <h4 id="totalTests" class="card-text text-center text-dark">total test case</h4>
+                        </div>
+                    </div>
+                    <div class="card shadow text-bg-white my-3 mx-4" style="width: 20rem; height: 9rem;">
+                        <div class="card-header fw-bold text-dark">Total Cases</div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <h4 id="totalCases" class="ard-text text-center text-dark">total cases</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+  
+
+    <!-- Import Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="assignment4.js"></script>
+</body>
+</html>
