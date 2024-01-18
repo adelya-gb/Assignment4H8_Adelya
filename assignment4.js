@@ -4,10 +4,7 @@ const getData = async() => {
     try {
         let inputan = document.getElementById("inputCountry").value;
         const fetchUrl = await fetch(`https://covid-193.p.rapidapi.com/statistics?country=${inputan}`, {
-            headers: {
-                'X-RapidAPI-Key': '772cdf7666msh0b4026c3343f42ep15dcedjsn50bc4ebdcb90',
-                'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
-            }
+            
         })
 
         // console.log(inputan);
